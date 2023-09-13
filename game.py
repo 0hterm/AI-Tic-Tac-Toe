@@ -55,23 +55,23 @@ class TicTacToe:
         # first check row
         row_ind = math.floor(square / 3)
         row = self.board[row_ind*3: (row_ind + 1) * 3]
-        if all([spot == letter for spot in row]):
+        if all(spot == letter for spot in row):
             return True
         
         # check column
         col_ind = square % 3
         column = [self.board[col_ind + i*3] for i in range(3)]
-        if all([spot == letter for spot in column]):
+        if all(spot == letter for spot in column):
             return True
         
         # check diagonals
         # can only be diagonal win if square is even number (0, 2, 4, 6, 8)
         if square % 2 == 0:
             diagonal1 = [self.board[i] for i in [0, 4, 8]] #left to right diag.
-            if all([spot == letter for spot in diagonal1]):
+            if all(spot == letter for spot in diagonal1):
                 return True
             diagonal2 = [self.board[i] for i in [2, 4, 6]] #right to left diag.
-            if all([spot == letter for spot in diagonal2]):
+            if all(spot == letter for spot in diagonal2):
                 return True
             
         # if all checks fail, move was not a winning move
@@ -90,10 +90,7 @@ def play(game, x_player, o_player, print_game = True):
     letter = 'X' #starting letter
     while game.empty_squares(): #while there are still empty squares
         # get players move
-        if letter == 'O':
-            square = o_player.get_move(game)
-        else:
-            square = x_player.get_move(game)
+        square = o_player.get_move(game) if letter == 'O' else x_player.get_move(game)
             
         #Function to make a move
         if game.make_move(square, letter):
