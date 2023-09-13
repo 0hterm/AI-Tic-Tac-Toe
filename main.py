@@ -2,6 +2,17 @@ from game import TicTacToe, play
 from players import HumanPlayer, RandomComputerPlayer, IntelligentComputerPlayer
 
 
+# Team: Hunter Termo (alone)
+# Date: 9/13/2023
+# Assignment: 1
+
+# Source code referenced:
+# Author: Kylie Ying
+# Title: Tic-Tac-Toe AI
+# Type: Source code
+# Web Address: https://github.com/kying18/tic-tac-toe
+
+
 # main function
 if __name__ == '__main__':
     print('Welcome to my Tic-Tac-Toe game!')
