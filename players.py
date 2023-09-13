@@ -2,16 +2,6 @@ import math
 import random
 
 
-# Team: Hunter Termo (alone)
-# Date: 9/13/2023
-# Assignment: 1
-
-# Source code referenced:
-# Author: Kylie Ying
-# Title: Tic-Tac-Toe AI
-# Type: Source code
-# Web Address: https://github.com/kying18/tic-tac-toe
-
 # Player class
 class Player():
     def __init__(self, letter):
