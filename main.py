@@ -1,3 +1,7 @@
+from game import TicTacToe, play
+from players import HumanPlayer, RandomComputerPlayer, IntelligentComputerPlayer
+
+
 # main function
 if __name__ == '__main__':
     print('Welcome to my Tic-Tac-Toe game!')
