@@ -108,9 +108,6 @@ def play(game, x_player, o_player, print_game = True):
                     
             #after move is made, we need to alternate letters
             letter = 'O' if letter == 'X' else 'X'
-        
-        # short time delay for readability when running
-        time.sleep(.8)
             
     # if no more empty squares and function has not returned a winner, print that the game was a tie
     if print_game:
